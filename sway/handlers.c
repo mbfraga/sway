@@ -412,7 +412,6 @@ static bool handle_view_created(wlc_handle handle) {
 		list_add(output->unmanaged, h);
 		wlc_view_set_mask(handle, VISIBLE);
 	}
-	wlc_view_set_mask(handle, VISIBLE);
 
 	if (return_to_workspace && current_ws != swayc_active_workspace()) {
 		// we were on one workspace, switched to another to add this view,
